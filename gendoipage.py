@@ -36,6 +36,8 @@ if (len(sys.argv)>1):
 		force = True; postcombine=False
 	elif sys.argv[1] == 'c': 
 		combine=True; postcombine=False
+	elif sys.argv[1] == 'n': 
+		postcombine=False
 
 nowdir=os.path.basename(os.path.abspath(os.path.curdir))
 p=re.compile(r"<title>.*?</title>")
